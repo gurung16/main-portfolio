@@ -1,216 +1,195 @@
 
 body{
-  margin: 0;
+      margin:0;
+      background-image:linear-gradient(#252422,#ccc5b9);
+      font-size: 1.5em;
+      font-family: 'Open Sans Condensed', sans-serif;
+      box-sizing:border-box
 }
 
-.navBar{
-  background-color:#000099;
-  overflow: hidden;
-}
-
-.navBar a{
-  font-size: 20px;
-  float: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.navBar img{
-  width:80px;
-  height:50px;
-}
-
-a:hover{
-  color: #98d2f2;
+#myvideo{
+  width: 100%;
 }
 
 .header{
-  background-color:#f2f4f7;
-  display: flex;
-
-}
-
-
-.header h1, h2{
-  margin:0;
-  padding-bottom:10px;
+  position: relative;
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color:black;
-}
-
-.header h1{
-  margin-top:100px;
-}
-
-.header-image img{
-  width:100%;
-  padding-top: 5px;
+  color: white;
 }
 
 .title{
-  width:50%;
-  margin:0;
-  font-family: 'Open Sans Condensed', sans-serif;
+  position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
 }
-
-.title p{
-  margin:0;
-  text-align: center;
+.title img{
+  border-radius: 50%;
+  height:250px;
+  width:250px;
 }
-
-.header-image{
-  width:50%;
-  margin: 0;
-}
-
-
 .content-experience{
-  text-align:center;
-  background-color:#000099;
-  padding: 20px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  width:100%;
+  display:block;
   font-size: 21px;
   color:white;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .border{
-  border:4px solid white;
-  width:50%;
+  display: inline-block;
+  width:45%;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Container for skill bars */
+.cont {
+  width: 100%; /* Full width */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 80%; background-color: #4CAF50;} /* Green */
+.css {width: 75%; background-color: #2196F3;} /* Blue */
+.js {width: 60%; background-color: #f44336;} /* Red */
+.react {width: 60%; background-color: #808080;} /* Dark Grey */
+
+
 #content-portfolio{
+  background-image: url("https://images.pexels.com/photos/3038740/pexels-photo-3038740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  padding-top:-20px;
+  position:relative;
   text-align: center;
-  background-image: linear-gradient(#000099, #2471A3 );
-  padding: 20px;
-  font-family: 'Open Sans Condensed', sans-serif;
   color:white;
+  width:100%;
 }
 
-.item{
-  display: inline-block;
-  position: relative;
-}
-
-.item img{
+.site img{
+  height:200px;
   width:250px;
-  height:176.3px;
+  display: inline-block;
 }
 
-.overlay{
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:black;
-  opacity: 0.5;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
+.info{
+  position: relative;
+  width:30%;
+  display: inline-block;
 }
 
-.item:hover .overlay{
-  height: 100%;
-}
+.button{
+   background-color: #f4511e;
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-align: center;
+   font-size: 16px;
+   margin: 4px 2px;
+   opacity: 0.6;
+   transition: 0.3s;
+   display: inline-block;
+   text-decoration: none;
+   cursor: pointer;
+ }
 
-.text {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+ .button:hover {opacity: 1}
 
-.button a{
-  text-decoration: none;
-  color: black
-  font-family: 'Open Sans Condensed', sans-serif;
-}
+ .content-contact{
+   display:block;
+   overflow: hidden;
+   padding-top: 100px;
+ }
 
+ .contact{
+   margin-left:50px;
+   padding: 20px;
+   width: 40%;
+   float: left;
+   display: inline-block;
+   text-align: center;
+   color: white;
+ }
+ .contact:nth-child(1){ margin-right: 0; }
+
+ /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 50%; /* Full width */
+  width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-left: 5%;
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-  font-family: 'Open Sans Condensed', sans-serif;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-input[type=submit]{
-  background-color:white;
-  color:black;
-  display: block;
-  margin-left: 48%;
-  padding: 5px;
-  border-radius:20%;
-}
-
-label{
-  float:left;
-  display: block;
-  width:100%;
-  padding-left: 5%;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.contact{
-  background-image: linear-gradient(#2471A3, #99ccff);
-  margin: 0;
-  height: 400px;
-
-}
-.contact-container{
-  width:50%;
-  background-color:white;
-  margin-left: auto;
-  margin-right:auto;
-  position:relative;
-  top:100px;
-  border-radius: 25px;
-}
-
-.contact-container p{
-  margin:0;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-button{
-  background-color:white;
-  color:black;
-  display: block;
-  margin-left: 48%;
-  padding: 5px;
-  border-radius:20%;
-}
-
-
-
-.footer {
-  margin:0;
-  background-image: url("images/footer.jpg");
-  height: 400px;
-  background-attachment:fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.end{
-  padding: 20px;
-  background-color: #000099;
-}
-
-.end h2{
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #f4511e;
+  opacity: 0.6;
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  opacity: 1;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.btn2{
+  margin-top: 50px;
+}
+
+.footer{
+  width:100%;
+  display: inline-block;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #myvideo{
+    display:none;
+  }
+  .header{
+    height:600px;
+    text-align: center;
+  }
+  .title img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .border{
+    width:100%;
+  }
+  .info{
+    width:100%;
+  }
+  .contact{
+    width: 90%;
+    margin-left: 10px;
+  }
 }

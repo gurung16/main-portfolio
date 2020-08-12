@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 204" width="190" height="204">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: white;stroke-linecap:round;stroke-linejoin:round }
+		.shp1 { fill: none;stroke: white }
+	</style>
+	<g id="origami">
+		<path id="Rectangle 12" class="shp0" d="M16.8 0.97L106.03 28.55L143.14 127.66L53.53 106.79L16.8 0.97Z" />
+		<path id="Rectangle 2" class="shp1" d="M188.83 87.66L188.83 108.66L160.5 108.66" />
+		<path id="Rectangle 13" class="shp1" d="M119.3 66.66L189 87.66L137.96 129.66" />
+		<path id="Rectangle 14" class="shp0" d="M51.44 104.08L75.59 182.16L0 203.16L51.44 104.08Z" />
+		<path id="Path 8" class="shp1" d="M137.63 128.26L69.29 164.43" />
+	</g>
+</svg>
